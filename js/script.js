@@ -49,10 +49,10 @@ const cells = row * col;
 
 //! elab
 //  al click del bottone ciclo per tante volte sono le celle desiderate
-button.addEventListener("click", function(e){
-    e.preventDefault;
+button.addEventListener("click", function(){
+    
     for (let i = 1; i <= cells; i++){
-        const cell = createCell();
+        const cell = createCell(i);
         
         // event della cella
         cell.addEventListener("click", function(){
