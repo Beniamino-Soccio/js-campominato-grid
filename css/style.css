@@ -62,5 +62,9 @@ footer p{
     height: calc(100% / 10);
     flex-basis: calc(100% / 10);
     border: 1px solid #000;
+    background-color: #fff;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

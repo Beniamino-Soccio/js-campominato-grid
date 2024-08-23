@@ -29,7 +29,14 @@ Note:
 - questo bonus richiederà una riflessione extra per quel che riguarda il calcolo della larghezza delle celle 
 */
 
-//milestone2
+//function
+const createCell = content => {
+    const cell = document.createElement('div');
+    cell.className = 'cell';
+    cell.append(content);
+    return cell;
+}
+
 //Al click del bottone play, vengono generate 100 celle in 10 righe da 10 celle ciascuna.
 //! prep
 //recupero gli elementi del DOM che mi servono
@@ -44,13 +51,19 @@ const cells = row * col;
 //  al click del bottone ciclo per tante volte sono le celle desiderate
 button.addEventListener("click", function(e){
     e.preventDefault;
-    for (let i = 0; i < cells; i++){
-        const cell = document.createElement('div');
-        cell.className = 'cell';
+    for (let i = 1; i <= cells; i++){
+        const cell = createCell();
+        
+        // event della cella
+        cell.addEventListener("click", function(){
+            console.log(i)
+         })
         // "stampo"
         grid.appendChild(cell);
-    }
 
+    }
  });
+
+ 
 
 
