@@ -47,7 +47,7 @@ const row = 10;
 const col = 10;
 const cells = row * col;
 
-//! elab
+//! elaboration
 //  al click del bottone ciclo per tante volte sono le celle desiderate
 button.addEventListener("click", function(){
     
