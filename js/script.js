@@ -57,6 +57,7 @@ button.addEventListener("click", function(){
         // event della cella
         cell.addEventListener("click", function(){
             console.log(i)
+            cell.classList.add('clicked');
          })
         // "stampo"
         grid.appendChild(cell);
