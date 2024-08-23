@@ -28,3 +28,29 @@ Note:
 - questo bonus richiederà un evento diverso dal 'click'
 - questo bonus richiederà una riflessione extra per quel che riguarda il calcolo della larghezza delle celle 
 */
+
+//milestone2
+//Al click del bottone play, vengono generate 100 celle in 10 righe da 10 celle ciascuna.
+//! prep
+//recupero gli elementi del DOM che mi servono
+const grid = document.getElementById('grid');
+const button = document.getElementById('play');
+
+const row = 10;
+const col = 10;
+const cells = row * col;
+
+//! elab
+//  al click del bottone ciclo per tante volte sono le celle desiderate
+button.addEventListener("click", function(e){
+    e.preventDefault;
+    for (let i = 0; i < cells; i++){
+        const cell = document.createElement('div');
+        cell.className = 'cell';
+        // "stampo"
+        grid.appendChild(cell);
+    }
+
+ });
+
+
